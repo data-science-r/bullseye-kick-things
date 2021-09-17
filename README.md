@@ -28,6 +28,8 @@ Apply the fix by using the Ubuntu key server, not the one at `keys.gnupg.net`.
 
     docker build --pull --rm -f "Dockerfile" -t bullseye-kick-things:latest "."
 
+Installs using `r-cran-tidyverse` as the root package rather than `r-base` or `r-base-dev`. In other words, Tidyverse pulls in R as its dependency.
+
 ## Tidyverse
 
 You can list pre-build R packages using the Aptitude. List the packages using the following APT cache command.
