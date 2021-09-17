@@ -5,6 +5,4 @@ RUN apt update
 RUN apt install --no-install-recommends -y software-properties-common
 RUN add-apt-repository "deb https://cloud.r-project.org/bin/linux/debian $(lsb_release -cs)-cran40/"
 RUN apt update
-RUN apt install --no-install-recommends -y r-base
-
-RUN R -e 'print(Sys.getenv())'
+RUN apt install --no-install-recommends -y r-cran-tidyverse
