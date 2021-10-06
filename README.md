@@ -32,7 +32,9 @@ Installs using `r-cran-tidyverse` as the root package rather than `r-base` or `r
 
 ## Tidyverse
 
-You can list pre-build R packages using the Aptitude. List the packages using the following APT cache command.
+You can list pre-build R packages using the Aptitude. These have a deployment advantage. You do not need to install the Fortran or C compiler.
+
+List the packages using the following APT cache command.
 
     apt-cache search "^r-.*" | sort
 
